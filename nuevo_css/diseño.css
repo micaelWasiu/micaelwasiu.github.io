@@ -1,0 +1,250 @@
+/*menus*/
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(225, 225, 226, 0.5);
+  border-radius: 5px;
+}
+
+section {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.5);
+  text-align: center;
+}
+
+section:first-of-type {
+  display: block;
+}
+
+/**/
+
+/*diseños adicionales*/
+body {
+  background-image: url(https://mexicodesign.com/wp-content/uploads/2022/02/elementos-para-adecuar-home-office.png);
+background-size: cover;
+} 
+header {
+  position: relative;
+  background-color: rgba(192, 235, 252, 0.712);
+  border-radius: 10px;
+  max-height: 100% ;
+  ;
+}
+h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+li {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/**/
+
+/*carrusel de imagenes*/
+.carousel {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(142, 142, 145, 1);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: black;
+}
+/**/
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.column {
+  width: 50%;
+  padding: 0 10px;
+}
+
+dl {
+  margin-top: 20px;
+}
+
+dt {
+  margin: 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+dd {
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+
+
+/*menu flotante derecho*/
+.menu-vertical-derecho {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+}
+
+.menu-vertical-derecho ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-vertical-derecho li {
+  margin-bottom: 10px;
+}
+
+.menu-vertical-derecho a {
+  color: #fff;
+  text-decoration: none;
+}
+/**/
+/**formato para formulario*/
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="reset"] {
+  background-color: #f44336;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  opacity: 0.8;
+}
+/**/
+/* iconos*/
+a i:before {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+a i.fab.fa-instagram:before {
+  content: "\f16d";
+  font-family: "Font Awesome 5 Brands";
+}
+
+a i.fab.fa-facebook:before {
+  content: "\f09a";
+  font-family: "Font Awesome 5 Brands";
+}
+
+a i.fab.fa-whatsapp:before {
+  content: "\f232";
+  font-family: "Font Awesome 5 Brands";
+}
+
+a i.fab.fa-linkedin:before {
+  content: "\f08c";
+  font-family: "Font Awesome 5 Brands";
+}
+h4 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  color: #000; 
+}
+dt, dd{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/**/
